@@ -21,7 +21,7 @@ public class EmployeeService {
         return employeeRepository.findByDepartment(name);
     }
 
-    public long getEmployeeCount() {
+    public long getTotalEmployeeCount() {
         return employeeRepository.count();
     }
 

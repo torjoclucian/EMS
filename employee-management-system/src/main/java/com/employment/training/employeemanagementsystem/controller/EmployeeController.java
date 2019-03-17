@@ -30,4 +30,9 @@ public class EmployeeController {
         return employeeService.countTotalEmployeesByDepartment(name);
     }
 
+    @GetMapping(value = "/totalNumberOfEmployees")
+    public long countAllEmployeesByDepartment() {
+        return employeeService.getTotalEmployeeCount();
+    }
+
 }
